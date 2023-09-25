@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.icon {
+    @apply w-6 h-6 inline-block;
+}
+.player {
+    @apply cursor-pointer absolute top-2/4 left-2/4;
+    transform: translate(-50%, -50%);
+}
+.arrow {
+    @apply absolute top-1/2 text-lg p-2 cursor-pointer font-bold -mt-5 select-none text-black text-3xl hover:bg-yellow-200 transition ease-in-out delay-200;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+ }
+.dot {
+    @apply h-3 w-3 inline-block bg-dot cursor-pointer transition-colors delay-300 ease-in-out rounded-full;
+}
+.dot:hover, .active{
+    @apply bg-dotAction;
+}
+.flex-item{
+    flex:0 1 49%;
+    @apply text-center p-2 rounded-3xl border-4 mb-2 cursor-pointer hover:bg-slate-400 transition ease-linear delay-300;
+}
+.cart-item-1{
+    flex:0 1 35%;
+}
+.cart-item-2{
+    flex:0 1 50%;
+}
+.cost{
+    @apply text-white font-bold flex justify-between mt-4 border-b-2 border-b-white;
+}
+.input{
+    @apply inline-block w-full p-2 mb-3 rounded-3xl;
+}
+.input::placeholder{
+    @apply text-black font-bold text-lg;
+}
+.submit{
+    @apply px-3 py-1 text-white bg-blue-600 rounded-full cursor-pointer;
+}
+.desc{
+    @apply py-3 px-2;
+}
+#grid-container{
+    max-width: 550px;
+}
+.review{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}

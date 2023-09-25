@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "archyedt-bold": "^1.0.0",
+    "bpg-nateli": "^1.0.0"
+  }
+}
